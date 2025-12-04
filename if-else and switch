@@ -1,0 +1,49 @@
+package Dailypractice;
+
+import java.util.Scanner;
+public class Switch_Case {
+
+
+
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+
+            System.out.print("Enter a number: ");
+            int num = sc.nextInt();
+
+            if (num > 0) {
+                System.out.println("The number is positive.");
+            } else if (num < 0) {
+                System.out.println("The number is negative.");
+            } else {
+                System.out.println("The number is zero.");
+            }
+
+
+            System.out.println("\nChoose an option:");
+            System.out.println("1. Say Hello");
+            System.out.println("2. Say Bye");
+            System.out.println("3. Say Thanks");
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Hello!");
+                    break;
+                case 2:
+                    System.out.println("Bye!");
+                    break;
+                case 3:
+                    System.out.println("Thank you!");
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
+            }
+
+            sc.close();
+        }
+    }
+
+
